@@ -21,7 +21,7 @@ def masker(image, masks, count):
 
 if __name__ == '__main__':
 
-    image = imread("test/img_20200611_102834_043.jpg")
+    image = imread("budapest.png")
     h,w,c = image.shape
     data = image.reshape(h*w, c)
     gmm = mixture.GaussianMixture(n_components=4, covariance_type="tied")
